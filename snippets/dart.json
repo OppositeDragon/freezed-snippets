@@ -9,7 +9,7 @@
     "description": "Creates a freezed class, with no json serialization support",
     "body": [
       "@freezed",
-      "abstract class ${1:Class} with _$${1:Class} {",
+      "abstract class ${1:Class} with _\\$${1:Class} {",
       "\tconst factory ${1:Class}({",
       "\t\t$2",
       "\t}) = _${1:Class};$0",
@@ -21,11 +21,11 @@
     "description": "Creates a freezed class with json serialization support",
     "body": [
       "@freezed",
-      "abstract class ${1:Class} with _$${1:Class}{",
+      "abstract class ${1:Class} with _\\$${1:Class}{",
       "\tconst factory ${1:Class}({",
       "\t\t$2",
       "\t}) = _${1:Class};$0\n",
-      "factory ${1:Class}.fromJson(Map<String, dynamic> json) => _$${1:Class}FromJson(json);",
+      "factory ${1:Class}.fromJson(Map<String, dynamic> json) => _\\$${1:Class}FromJson(json);",
       "}"
     ]
   },
@@ -33,7 +33,7 @@
     "prefix": "freezedjsonstatement",
     "description": "Creates a `fromJson` statement",
     "body": [
-      "factory $1.fromJson(Map<String, dynamic> json) => _$$1FromJson(json);$0"
+      "factory $1.fromJson(Map<String, dynamic> json) => _\\$$1FromJson(json);$0"
     ]
   },
   "Freezed Union Class": {
@@ -41,7 +41,7 @@
     "description": "Creates a freezed union class",
     "body": [
       "@freezed",
-      "class $1 with _$$1{",
+      "class $1 with _\\$$1{",
       "\tconst factory $1.$2({$4}) = $3;",
       "\tconst factory $1.$5({$7}) = $6;$0",
       "}"
@@ -58,14 +58,14 @@
     "body": [
       "@freezed",
       "@JsonSerializable()",
-      "class ${1:Class} with _$${1:Class} {",
+      "class ${1:Class} with _\\$${1:Class} {",
       "\tconst ${1:Class}({",
       "\t\trequired this.$2,$0",
       "\t});\n",
       "\t@override",
       "\tfinal ${3:Type} $2;\n",
-      "\tfactory ${1:Class}.fromJson(Map<String, Object?> json) => _$${1:Class}FromJson(json);\n",
-      "\tMap<String, Object?> toJson() => _$${1:Class}ToJson(this);",
+      "\tfactory ${1:Class}.fromJson(Map<String, Object?> json) => _\\$${1:Class}FromJson(json);\n",
+      "\tMap<String, Object?> toJson() => _\\$${1:Class}ToJson(this);",
       "}"
     ]
   },
@@ -74,7 +74,7 @@
     "description": "Creates a Freezed Classic Class with no serialization support",
     "body": [
       "@freezed",
-      "class ${1:Class} with _$${1:Class} {",
+      "class ${1:Class} with _\\$${1:Class} {",
       "\tconst ${1:Class}({",
       "\t\trequired this.$2,$0",
       "\t});\n",
